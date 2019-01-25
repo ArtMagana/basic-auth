@@ -69,4 +69,6 @@ app.use('/', auth);
 const siteRoutes = require('./routes/site-routes');
 app.use('/', siteRoutes);
 
+console.log('hola')
+
 module.exports = app;

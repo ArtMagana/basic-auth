@@ -2,6 +2,6 @@
   appplications:
   - instances: 1
     name: socialloginmaga24ene
-    memory: 128M
+    memory: 64M
     domain: mybluemix.net
     host: socialloginmaga24ene

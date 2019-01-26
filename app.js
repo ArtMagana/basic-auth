@@ -9,11 +9,16 @@ const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
 const session      = require('express-session');
+// const bcrypt       = require('bcrypt');
+// const passport = require ('passport');
 const MongoStore   = require('connect-mongo') (session)
 
+// process.env.MONGODB
 
 mongoose
-  .connect(process.env.MONGODB, {useNewUrlParser: true})
+  .connect("mongodb://ArtMagana:9564Bau30Zid31@ds229771.mlab.com:29771/ironhackermaga", {
+    useNewUrlParser: true
+  })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
